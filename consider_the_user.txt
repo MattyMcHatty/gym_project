@@ -1,0 +1,13 @@
+What user needs is your product going to answer? Can you document that?
+
+Why would your user want to use this over something similar that they've seen elsewhere?
+
+How could you make sure that your website uses interface solutions that users are familiar with?
+    
+    Study some similar websites to get an idea of how they work and how they are laid out.
+
+What is the user journey - how will users interact with your product, and how many steps will be necessary to complete their goals?
+
+    All relevant information for any given subject should be presented on the same page. Routes to certain pieces of information should be
+    as short as possible and marked clearly.
+
