@@ -10,8 +10,8 @@ Saturday
         Implementation constraints plan 
         User sitemap - Done
         Personas - Done
-        User journey
-        User needs
+        User journey - Done
+        User needs - Done
         Wireframe designs
 
 Sunday
