@@ -12,7 +12,8 @@ Saturday
         Personas - Done
         User journey - Done
         User needs - Done
-        Wireframe designs
+        Wireframe designs - Done
+        Folder Diagram - Done
 
 Sunday
     Code all basic functionality;
