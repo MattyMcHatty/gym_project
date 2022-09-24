@@ -1,0 +1,28 @@
+This is my timeline for when I want to get things completed. Each morning I will add to this more specific details of my task for the day
+so I can work through them systematically.
+
+Saturday
+    Write plan, Finish all diagrams and prep work;
+        Case diagram
+        Class diagram
+        Object diagram
+        Activity diagram
+        Implementation constraints plan
+        User sitemap
+        Personas
+        User journey
+        User needs
+        Wireframe designs
+
+Sunday
+    Code all basic functionality;
+        Make pseudocode
+
+Monday
+    CSS and work on additional functionality;
+
+Tuesday
+    Complete all additional functionality;
+
+Wednesday
+    Clean up code and prepare for presentation;
