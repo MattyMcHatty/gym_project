@@ -3,13 +3,13 @@ so I can work through them systematically.
 
 Saturday
     Write plan, Finish all diagrams and prep work;
-        Case diagram
-        Class diagram
-        Object diagram
-        Activity diagram
-        Implementation constraints plan
-        User sitemap
-        Personas
+        Case diagram - Done
+        Class diagram - Done 
+        Object diagram - Done
+        Activity diagram - Done
+        Implementation constraints plan 
+        User sitemap - Done
+        Personas - Done
         User journey
         User needs
         Wireframe designs
