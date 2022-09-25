@@ -12,3 +12,27 @@ def save(booking):
     id = results[0]['id']
     booking.id = id
 
+def select_all():
+    bookings = []
+    sql = "SELECT * FROM bookings"
+    results = run_sql(sql)
+    for result in results:
+        member = member_repository.select(result['member_id'])
+        course = course_repository.select(result['course_id'])
+        booking = Booking(member, course, result['id'])
+        bookings.append(booking)
+    return bookings
+
+def select(id):
+    booking = None
+    sql = "SELECT * FROM bookings WHERE id = %s"
+    values = [id]
+
+    results = run_sql(sql, values)
+    if results:
+        result = results[0]
+        member = member_repository.select(result['member_id'])
+        course = course_repository.select(result['course_id'])
+        booking = Booking(member, course, result['id'])
+    return booking
+
