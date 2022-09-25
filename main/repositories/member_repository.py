@@ -8,3 +8,12 @@ def save(member):
     id = results[0],['id']
     member.id = id
 
+def select_all():
+    members = []
+    sql = "SELECT * FROM members"
+    results = run_sql(sql)
+    for result in results:
+        member = Member(result['first_name'], result['last_name'], result['premium'], result['active'], result['id'])
+        members.append(member)
+    return members
+
