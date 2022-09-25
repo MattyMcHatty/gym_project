@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Courses</h1>
+
+    {% for course in courses %}
+
+    <br>
+    <h3>{{course.name}}</h3><br>
+    {{course.description}}<br>
+    {{course.date}}<br>
+    Spots left: "capacity - bookings" / {{course.capacity}}<br>
+    <br>
+
+    {% endfor %}
+
+{% endblock %}
