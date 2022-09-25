@@ -19,3 +19,12 @@ def select_all():
         courses.append(course)
     return courses
 
+def select(id):
+    sql = "SELECT * FROM courses WHERE id = %s"
+    values = [id]
+    results = run_sql(sql, values)
+    if results:
+        result = results[0]
+        course = Course(result['name'], result['description'], result['date'], result['capacity'], result['id'])
+    return course
+
