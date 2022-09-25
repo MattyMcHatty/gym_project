@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Members</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    {% for member in members %}
+    <tr>
+        <td>{{member.last_name}}, {{member.first_name}} | Premium: {{member.premium}}  Active: {{member.active}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

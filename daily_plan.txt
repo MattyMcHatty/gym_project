@@ -33,7 +33,7 @@ Sunday
         base.html - Done
         index.html - Done
         setup controllers with blueprints - Done
-        setup working link to view members page - 
+        setup working link to view members page - Done
         setup working link to view courses page - 
         setup working link to view bookings page - 
 
