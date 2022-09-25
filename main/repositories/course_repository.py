@@ -28,3 +28,12 @@ def select(id):
         course = Course(result['name'], result['description'], result['date'], result['capacity'], result['id'])
     return course
 
+def delete_all():
+    sql = "DELETE FROM courses"
+    run_sql(sql)
+
+def delete():
+    sql = "DELETE FROM courses WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
+
