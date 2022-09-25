@@ -34,8 +34,15 @@ Sunday
         index.html - Done
         setup controllers with blueprints - Done
         setup working link to view members page - Done
-        setup working link to view courses page - 
-        setup working link to view bookings page - 
+        setup working link to view courses page - Done
+        setup working link to view bookings page - Done
+        setup working link and form to create a new member - Done
+        setup working link and form to create a new course - 
+        setup working link and form to create a new booking - 
+        setup working link and form to edit a member -
+        setup working link and form to edit a course -
+        setup working link and form to edit a booking -
+
 
 
 Monday

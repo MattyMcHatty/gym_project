@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Add New Member</h1>
+    <form action="/members" method="POST">
+        <label for="first_name">
+            <span>First Name:</span>
+        </label>
+            <input id="first_name" name="first_name" type="text" required>
+
+        <label for="last_name">
+            <span>Last Name:</span>
+        </label>
+            <input id="last_name" name="last_name" type="text" required>
+
+        <label for="premium">
+            <span>Premium?:</span>
+        </label>
+        <select id="premium" name="premium">
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </select>
+
+        <input type="submit" value="Add Member">
+
+    </form>
+
+{% endblock %}
