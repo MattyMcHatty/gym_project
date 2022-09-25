@@ -27,3 +27,7 @@ def select(id):
         member = Member(result['first_name'], result['last_name'], result['premium'], result['active'], result['id'])
     return member
 
+def delete_all():
+    sql = "DELETE FROM members"
+    run_sql(sql)
+
