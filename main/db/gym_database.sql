@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS bookings;
 DROP TABLE IF EXISTS members;
-DROP TABLE IF EXISTS classes;
+DROP TABLE IF EXISTS courses;
 
 CREATE TABLE members (
     id SERIAL PRIMARY KEY,
@@ -10,7 +10,7 @@ CREATE TABLE members (
     active BOOLEAN
 );
 
-CREATE TABLE classes (
+CREATE TABLE courses (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     description VARCHAR(255),
@@ -21,6 +21,6 @@ CREATE TABLE classes (
 CREATE TABLE bookings(
     id SERIAL PRIMARY KEY,
     member_id SERIAL NOT NULL REFERENCES members(id),
-    class_id SERIAL NOT NULL REFERENCES classes(id)
+    course_id SERIAL NOT NULL REFERENCES courses(id)
 );
 
