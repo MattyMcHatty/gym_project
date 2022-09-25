@@ -18,6 +18,8 @@ Saturday
 Sunday
     Code all basic functionality;
         Make pseudocode
+        Create folders and files
+        
 
 Monday
     CSS and work on additional functionality;
