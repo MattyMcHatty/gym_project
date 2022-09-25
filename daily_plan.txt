@@ -18,8 +18,21 @@ Saturday
 Sunday
     Code all basic functionality;
         Make pseudocode
-        Create folders and files
-        
+        Create folders and files - Done
+        .flaskenv
+        app.py
+        gym_database.sql
+        run.sql
+        Member class
+        Class class
+        Booking class
+        Member repo functions
+        Class repo functions
+        Booking repo functions
+        Setup console.py with some default database entries
+        base.html
+        index.html
+
 
 Monday
     CSS and work on additional functionality;
