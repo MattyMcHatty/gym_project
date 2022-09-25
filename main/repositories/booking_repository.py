@@ -36,3 +36,12 @@ def select(id):
         booking = Booking(member, course, result['id'])
     return booking
 
+def delete_all():
+    sql = "DELETE FROM bookings"
+    run_sql(sql)
+
+def delete(id):
+    sql = "DELETE FROM bookings WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
+
