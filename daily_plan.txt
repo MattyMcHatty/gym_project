@@ -20,7 +20,7 @@ Sunday
         Make pseudocode
         Create folders and files - Done
         .flaskenv - Done
-        app.py
+        app.py - Done
         gym_database.sql
         run.sql
         Member class
