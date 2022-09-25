@@ -10,3 +10,12 @@ def save(course):
     course.id = id
 
 
+def select_all():
+    courses = []
+    sql = "SELECT * FROM courses"
+    results = run_sql(sql)
+    for result in results:
+        course = Course(result['name'], result['description'], result['date'], result['capacity'], result['id'])
+        courses.append(course)
+    return courses
+
