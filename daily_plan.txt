@@ -23,9 +23,9 @@ Sunday
         app.py - Done
         gym_database.sql - Done
         run.sql - Done
-        Member class
-        Class class
-        Booking class
+        Member class - Done
+        Class class - Done
+        Booking class - Done
         Member repo functions
         Class repo functions
         Booking repo functions
