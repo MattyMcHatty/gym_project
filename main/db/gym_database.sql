@@ -20,7 +20,7 @@ CREATE TABLE courses (
 
 CREATE TABLE bookings(
     id SERIAL PRIMARY KEY,
-    member_id SERIAL NOT NULL REFERENCES members(id),
-    course_id SERIAL NOT NULL REFERENCES courses(id)
+    course_id SERIAL NOT NULL REFERENCES courses(id),
+    member_id SERIAL NOT NULL REFERENCES members(id)   
 );
 

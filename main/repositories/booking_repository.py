@@ -9,8 +9,7 @@ def save(booking):
     sql = "INSERT INTO bookings (member_id, course_id) VALUES (%s, %s) RETURNING id"
     values = [booking.member.id, booking.course.id]
     results = run_sql(sql, values)
-    id = results[0]['id']
-    booking.id = id
+    booking.id = results[0]['id']
 
 def select_all():
     bookings = []

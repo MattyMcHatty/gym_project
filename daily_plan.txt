@@ -28,10 +28,14 @@ Sunday
         Booking class - Done
         Member repo basic functions - Done
         Class repo basic functions - Done
-        Booking repo basic functions
-        Setup console.py with some default database entries
-        base.html
-        index.html
+        Booking repo basic functions - Done
+        Setup console.py with some default database entries - Done
+        base.html - Done
+        index.html - Done
+        setup controllers with blueprints - 
+        setup working link to view members page - 
+        setup working link to view courses page - 
+        setup working link to view bookings page - 
 
 
 Monday
