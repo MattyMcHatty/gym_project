@@ -26,9 +26,9 @@ Sunday
         Member class - Done
         Class class - Done
         Booking class - Done
-        Member repo functions
-        Class repo functions
-        Booking repo functions
+        Member repo basic functions - Done
+        Class repo basic functions
+        Booking repo basic functions
         Setup console.py with some default database entries
         base.html
         index.html
