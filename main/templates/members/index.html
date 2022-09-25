@@ -14,7 +14,9 @@
     </tr>
     {% for member in members %}
     <tr>
-        <td>{{member.last_name}}, {{member.first_name}} | Premium: {{member.premium}}  Active: {{member.active}}</td>
+        <td>{{member.last_name}}, {{member.first_name}} | Premium: {{member.premium}}  Active: {{member.active}}
+            <a href="/members/{{member.id}}/edit">  |  Edit</a>
+        </td>
     </tr>
     {% endfor %}
 </table>

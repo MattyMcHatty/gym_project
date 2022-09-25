@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Edit {{course.name}} Course</h1>
+    <form action="/courses/{{course.id}}" method="POST">
+        <label for="name">
+            <span>Course Name:</span>
+        </label>
+            <input id="name" name="name" type="text" value="{{course.name}}" required>
+
+        <label for="description">
+            <span>Course Description</span>
+        </label>
+            <input id="description" name="description" type="text" value="{{course.description}}" required>
+
+        <label for="date">
+            <span>Date:</span>
+        </label>
+            <input type="date" id="date" name="date" value="{{course.date}}">
+
+        <label for="capacity">
+            <span>Capacity:</span>
+        </label>
+            <input id="capacity" id="capacity" name="capacity" min="0" value="{{course.capacity}}">
+
+        <input type="submit" value="Edit Course">
+
+    </form>
+
+    <br>
+    <form action="/courses/{{course.id}}/delete" method="POST">
+        <input type="submit" value="Delete">
+    </form>
+
+{% endblock %}

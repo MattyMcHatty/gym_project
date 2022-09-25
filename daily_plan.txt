@@ -39,14 +39,16 @@ Sunday
         setup working link and form to create a new member - Done
         setup working link and form to create a new course - Done
         setup working link and form to create a new booking - Done
-        setup working link and form to edit a member -
-        setup working link and form to edit a course -
-        setup working link and form to edit a booking -
+        setup working link and form to edit a member - Done
+        setup working link and form to edit a course - Done
+        setup working link to delete a member - Done
+        setup working link to delete a course - Done
 
 
 
 Monday
     CSS and work on additional functionality;
+        setup a link to delete a booking
 
 Tuesday
     Complete all additional functionality;

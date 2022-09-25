@@ -11,7 +11,7 @@
     {% for course in courses %}
 
     <br>
-    <h3>{{course.name}}</h3><br>
+    <h3>{{course.name}}</h3><a href="/courses/{{course.id}}/edit">  |  Edit</a><br>
     {{course.description}}<br>
     {{course.date}}<br>
     Spots left: "capacity - bookings" / {{course.capacity}}<br>

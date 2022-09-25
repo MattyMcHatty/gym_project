@@ -32,7 +32,7 @@ def delete_all():
     sql = "DELETE FROM courses"
     run_sql(sql)
 
-def delete():
+def delete(id):
     sql = "DELETE FROM courses WHERE id = %s"
     values = [id]
     run_sql(sql, values)

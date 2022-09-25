@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Edit {{member.first_name}}</h1>
+    <form action="/members/{{member.id}}" method="POST">
+        <label for="first_name">
+            <span>First Name:</span>
+        </label>
+            <input id="first_name" name="first_name" type="text" value="{{member.first_name}}" required>
+
+        <label for="last_name">
+            <span>Last Name:</span>
+        </label>
+            <input id="last_name" name="last_name" type="text" value="{{member.last_name}}" required>
+
+        <label for="premium">
+            <span>Premium?:</span>
+        </label>
+        <select id="premium" name="premium">
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </select>
+
+        <label for="active">
+            <span>Active?:</span>
+        </label>
+        <select id="active" name="active">
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </select>
+
+        <input type="submit" value="Update Member">
+
+    </form>
+    <br>
+    <form action="/members/{{member.id}}/delete" method="POST">
+        <input type="submit" value="Delete">
+    </form>
+    
+{% endblock %}

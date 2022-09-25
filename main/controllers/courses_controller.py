@@ -23,3 +23,23 @@ def create_course():
     new_course = Course(name, description, date, capacity)
     course_repository.save(new_course)
     return redirect("/courses")
+
+@courses_blueprint.route("/courses/<id>/edit")
+def edit_course(id):
+    course = course_repository.select(id)
+    return render_template("courses/edit.html", course=course)
+
+@courses_blueprint.route("/courses/<id>", methods=["POST"])
+def update_course(id):
+    name = request.form["name"]
+    description = request.form["description"]
+    date = request.form["date"]
+    capacity = request.form["capacity"]
+    course = Course(name, description, date, capacity, id)
+    course_repository.update(course)
+    return redirect("/courses")
+
+@courses_blueprint.route("/courses/<id>/delete", methods=["POST"])
+def delete_course(id):
+    course_repository.delete(id)
+    return redirect("/courses")
