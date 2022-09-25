@@ -21,8 +21,8 @@ Sunday
         Create folders and files - Done
         .flaskenv - Done
         app.py - Done
-        gym_database.sql
-        run.sql
+        gym_database.sql - Done
+        run.sql - Done
         Member class
         Class class
         Booking class
