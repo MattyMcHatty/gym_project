@@ -1,0 +1,2 @@
+an if loop that stipulates that if a member is already registered for a course then they cannot join it.
+

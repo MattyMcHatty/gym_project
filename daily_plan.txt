@@ -38,7 +38,7 @@ Sunday
         setup working link to view bookings page - Done
         setup working link and form to create a new member - Done
         setup working link and form to create a new course - Done
-        setup working link and form to create a new booking - 
+        setup working link and form to create a new booking - Done
         setup working link and form to edit a member -
         setup working link and form to edit a course -
         setup working link and form to edit a booking -
