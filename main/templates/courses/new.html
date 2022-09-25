@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Add New Course</h1>
+    <form action="/courses" method="POST">
+        <label for="name">
+            <span>Course Name:</span>
+        </label>
+            <input id="name" name="name" type="text" required>
+
+        <label for="description">
+            <span>Course Description</span>
+        </label>
+            <input id="description" name="description" type="text" required>
+
+        <label for="date">
+            <span>Date:</span>
+        </label>
+            <input type="date" id="date" name="date">
+
+        <label for="capacity">
+            <span>Capacity:</span>
+        </label>
+            <input id="capacity" id="capacity" name="capacity" min="0">
+
+        <input type="submit" value="Add Course">
+
+    </form>
+
+{% endblock %}
