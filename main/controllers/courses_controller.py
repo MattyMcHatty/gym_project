@@ -28,9 +28,9 @@ def create_course():
 @courses_blueprint.route("/courses/<id>")
 def show_course(id):
     course = course_repository.select(id)
-    members = course_repository.members(course)
+    members, number_of_members = course_repository.members(course)
     all_members = member_repository.select_all()
-    return render_template("courses/show.html", course=course, members=members, all_members=all_members)
+    return render_template("courses/show.html", course=course, members=members, all_members=all_members, number_of_members=number_of_members)
 
 @courses_blueprint.route("/courses/<id>/edit")
 def edit_course(id):

@@ -53,4 +53,6 @@ def members(course):
         member = Member(row['first_name'], row['last_name'], row['premium'], row['active'])
         members.append(member)
 
-    return members
+    number_of_members = len(members)
+
+    return members, number_of_members

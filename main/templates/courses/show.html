@@ -7,10 +7,9 @@
     <br>
     {{course.description}}<br>
     {{course.date}}<br>
-    Spots left: "capacity - bookings" / {{course.capacity}}<br>
+    Spots left: {{course.capacity - number_of_members}} / {{course.capacity}}<br>
     <br>
-
-
+    {% if number_of_members != course.capacity %}
     <form action="/bookings" method="POST">
         <label for="members">
             <span>Signup Member:</span>
@@ -24,6 +23,9 @@
             </select>
             <input type="hidden" name="course_id" value="{{course.id}}">
         <input type="submit" value="Confirm">
+    {% else %}
+            This course is full
+    {% endif %}
 
 
     <h3>Signups</h3>
