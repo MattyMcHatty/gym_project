@@ -14,6 +14,16 @@ header{
     font-size: 2rem;
     }
 
+a {
+    color: rgb(22, 33, 95);
+    text-decoration: none;
+    }
+    
+a:hover {
+    color: red;
+    text-decoration: underline;
+    }
+
 nav{
     background-color: #83baea;
     height: 3rem;
@@ -53,17 +63,14 @@ h1 {
     }
 
 .new-button{
-    background-color: #aaaaaa;
-    color: #fff;
     padding: 0;
-    font-size: 16px;
-    height: 40px;
-    width: 200px;
     border: none;
     border-radius: 0px;
-    cursor: pointer;
-    display:inline-block;
-    text-align: left;
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    padding-left: 15px;
+    border-radius: 5px;
     }
 
 .container {
@@ -161,111 +168,17 @@ div ul{
 
 .course-panels{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+}
 
-
-
-
-.where-togo {
-    background: #040E27;
-    padding: 20px 10px;
-    }
-
-.where-togo h3 {
-    font-size: 2rem;
-    color: #fff;
-    }
-
-.search-form {
-    display: flex;
-    }
-  
-  .input-field {
-    width: 220px;
-    margin: 10px;
-  }
-  
-  input {
+/* input {
     width: 100%;
-    height: 50px;
+    height: 35px;
     font-size: 1rem;
     padding-left: 15px;
     border-radius: 5px;
-  }
-  
-  .nice-select {
-    width: 100%;
-    height: 54px;
-    font-size: 1rem;
-    color: #AAB1B7;
-    font-weight: 300;
-    border: 1px solid #363E52;
-    border-radius: 5px;
-  }
-  
-
-  
-  .section-title {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .single-destination {
-    margin: 5px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-
-  
-  .testimonial-area {
-    background: #363E52;
-    padding: 50px;
-  }
-  
-  .single-testmonial{
-    background-color: aliceblue;
-    padding: 10px;
-    margin: 20px;
-    height: 300px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer {
-    color: #FFF;
-    background: #040E27;
-    position: relative;
-    padding: 20px;
-  }
-  
-  .footer-widget p {
-    color: #AAB1B7;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #AAB1B7;
-  }
-  
-  .footer-widget a:hover {
-    color: #FF4A52;
-  }
-  
-  .footer-widget ul li {
-    font-size: 14px;
-    line-height: 36px;
-  }
-  
-  .footer-widget a {
-    color: #AAB1B7;
-  }
-  
-  /* Media Queries */
-  
-  @media (max-width: 720px) {
-    .row {
-      grid-auto-flow: row;
-      grid-template-columns: 50%;
-    }
-  }
+    } */

@@ -3,26 +3,30 @@
 {% block content %}
 
     <h1>Edit {{course.name}} Course</h1>
-    <form action="/courses/{{course.id}}" method="POST">
+    <form class="course-form" action="/courses/{{course.id}}" method="POST">
         <label for="name">
             <span>Course Name:</span>
         </label>
             <input id="name" name="name" type="text" value="{{course.name}}" required>
+            <br>
 
         <label for="description">
             <span>Course Description</span>
         </label>
-            <input id="description" name="description" type="text" value="{{course.description}}" required>
+            <textarea id="description" name="description" type="text" value="{{course.description}}" style="height:200px" required></textarea>
+            <br>
 
         <label for="date">
             <span>Date:</span>
         </label>
             <input type="date" id="date" name="date" value="{{course.date}}">
+            <br>
 
         <label for="capacity">
             <span>Capacity:</span>
         </label>
-            <input id="capacity" id="capacity" name="capacity" min="0" value="{{course.capacity}}">
+            <input id="capacity" id="capacity" name="capacity" type="number" min="0" value="{{course.capacity}}">
+            <br>
 
         <input type="submit" value="Edit Course">
 
@@ -30,7 +34,7 @@
 
     <br>
     <form action="/courses/{{course.id}}/delete" method="POST">
-        <input type="submit" value="Delete">
+        <input class="delete-button" type="submit" value="Delete">
     </form>
 
 {% endblock %}

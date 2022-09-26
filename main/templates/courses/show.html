@@ -3,6 +3,7 @@
 {% block content %}
 
 <h1>{{course.name}}</h1>
+<main class="course-form">
 <a href="/courses/{{course.id}}/edit">Edit</a><br>
     <br>
     {{course.description}}<br>
@@ -23,9 +24,11 @@
             </select>
             <input type="hidden" name="course_id" value="{{course.id}}">
         <input type="submit" value="Confirm">
+        </form>
     {% else %}
             This course is full
     {% endif %}
+        </main>
 
 
     <h3>Signups</h3>

@@ -54,13 +54,14 @@ Monday
         create an if loop that calculates how many people are signed up to a course and then stops
             the user from adding a member if it is full - Done
         deactivated members don't show in the join class list - Done
-
-        CSS
+        CSS - Started
 
 Tuesday
     Complete all additional functionality;
         create delete button on each member edit page to delete any courses - 
         create delete button on each course show page to remove any members -
+        when I pick to edit course, why doesn't it default the text with the course.description value? - 
+    Finish CSS
 
 Wednesday
     Clean up code and prepare for presentation;
