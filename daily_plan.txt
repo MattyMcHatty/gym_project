@@ -47,8 +47,8 @@ Sunday
 Monday
     CSS and work on additional functionality;
         setup a link to delete a booking - Done
-        setup link to show an individual member and all the courses they are signed up to
-        setup a link to show an individual course and all the members that are signed up
+        setup link to show an individual member and all the courses they are signed up to - Done
+        setup a link to show an individual course and all the members that are signed up - Done
         CSS
 
 Tuesday

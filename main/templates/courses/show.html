@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{course.name}}</h1>
+<a href="/courses/{{course.id}}/edit">Edit</a><br>
+    <br>
+    {{course.description}}<br>
+    {{course.date}}<br>
+    Spots left: "capacity - bookings" / {{course.capacity}}<br>
+    <br>
+    <h3>Signups</h3>
+    <ul>
+    {% for member in members %}
+        <li>{{member.last_name}}, {{member.first_name}}</li>
+    {% endfor %}
+    </ul>
+
+
+{% endblock %}

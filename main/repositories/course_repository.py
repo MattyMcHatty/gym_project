@@ -41,3 +41,16 @@ def update(course):
     sql = "UPDATE courses SET (name, description, date, capacity) = (%s, %s, %s, %s) WHERE id = %s"
     values = [course.name, course.description, course.date, course.capacity, course.id]
     run_sql(sql, values)
+
+def members(course):
+    members = []
+
+    sql = "SELECT members.* FROM members INNER JOIN bookings ON bookings.member_id = members.id WHERE course_id = %s"
+    values = [course.id]
+    results = run_sql(sql, values)
+
+    for row in results:
+        member = Member(row['first_name'], row['last_name'], row['premium'], row['active'])
+        members.append(member)
+
+    return members

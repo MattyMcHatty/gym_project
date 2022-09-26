@@ -26,7 +26,8 @@ def create_member():
 @members_blueprint.route("/members/<id>/edit")
 def edit_member(id):
     member = member_repository.select(id)
-    return render_template("members/edit.html", member=member)
+    courses = member_repository.courses(member)
+    return render_template("members/edit.html", member=member, courses=courses)
 
 @members_blueprint.route("/members/<id>", methods=["POST"])
 def update_member(id):

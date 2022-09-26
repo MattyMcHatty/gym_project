@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect
 from flask import Blueprint
 from models.course import Course
 import repositories.course_repository as course_repository
+import repositories.member_repository as member_repository
 
 courses_blueprint = Blueprint("courses", __name__)
 
@@ -23,6 +24,12 @@ def create_course():
     new_course = Course(name, description, date, capacity)
     course_repository.save(new_course)
     return redirect("/courses")
+
+@courses_blueprint.route("/courses/<id>")
+def show_course(id):
+    course = course_repository.select(id)
+    members = course_repository.members(course)
+    return render_template("courses/show.html", course=course, members=members)
 
 @courses_blueprint.route("/courses/<id>/edit")
 def edit_course(id):
