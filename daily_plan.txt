@@ -44,11 +44,12 @@ Sunday
         setup working link to delete a member - Done
         setup working link to delete a course - Done
 
-
-
 Monday
     CSS and work on additional functionality;
-        setup a link to delete a booking
+        setup a link to delete a booking - Done
+        setup link to show an individual member and all the courses they are signed up to
+        setup a link to show an individual course and all the members that are signed up
+        CSS
 
 Tuesday
     Complete all additional functionality;
