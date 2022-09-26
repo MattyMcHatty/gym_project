@@ -39,6 +39,7 @@
     </form>
 
     <br>
+    {% if member.active %}
     <form action="/bookings" method="POST">
         <label for="courses">
             <span>Signup to Course:</span>
@@ -50,6 +51,9 @@
             </select>
             <input type="hidden" name="member_id" value="{{member.id}}">
         <input type="submit" value="Confirm">
+    {% else %}
+            Members cannot be signed up to courses while inactive.
+    {% endif %}
 
 
         <h3>Enrolled Courses</h3>
