@@ -1,3 +1,2 @@
-in edit member form, default premium and active to what it was before you entered.
 
 Create the head for each page

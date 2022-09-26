@@ -18,16 +18,26 @@
             <span>Premium?:</span>
         </label>
         <select id="premium" name="premium">
-            <option value="True">Yes</option>
-            <option value="False">No</option>
+            {% if member.premium != True %}
+                <option value="True">Yes</option>
+                <option value="False" selected>No</option>
+            {% else%}
+                <option value="True" selected>Yes</option>
+                <option value="False">No</option>
+            {% endif %}
         </select><br>
 
         <label for="active">
             <span>Active?:</span>
         </label>
         <select id="active" name="active">
-            <option value="True">Yes</option>
-            <option value="False">No</option>
+            {% if member.active != True %}
+                <option value="True">Yes</option>
+                <option value="False" selected>No</option>
+            {% else %}
+                <option value="True" selected>Yes</option>
+                <option value="False">No</option>
+            {% endif %}
         </select><br>
 
         <input type="submit" value="Update Member">
@@ -42,7 +52,9 @@
 </section>
 
     <br>
-    {% if member.active %}
+    
+    <h3>Enrolled Courses</h3>
+        {% if member.active %}
     <form class = "signup-selector" action="/bookings" method="POST">
         <label for="courses">
             Signup to Course:
@@ -58,9 +70,6 @@
     {% else %}
             Members cannot be signed up to courses while inactive.
     {% endif %}
-
-
-        <h3>Enrolled Courses</h3>
     <div>
     <ul>
         {% for course in courses %}

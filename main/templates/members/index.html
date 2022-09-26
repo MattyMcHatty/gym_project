@@ -12,8 +12,22 @@
 
     {% for member in members %}
     <article class="container member-row member-box">
-        <div class="single-member">{{member.last_name}}, {{member.first_name}}</div> <div class="single-member">| Premium: {{member.premium}}</div><div class="single-member">Active: {{member.active}}</div>
-            <div class="edit-button"><a href="/members/{{member.id}}/edit">Edit</a></div>
+        <div class="single-member">{{member.last_name}}, {{member.first_name}}</div> 
+        <div class="single-member">| Premium: 
+            {% if member.premium %}
+                &#9989;
+            {% else %}
+                &#10060;
+            {% endif %}
+        </div>
+        <div class="single-member">Active: 
+            {% if member.active %}
+                &#9989;
+            {% else %}
+                &#10060;
+            {% endif %}
+        </div>
+        <div class="edit-button"><a href="/members/{{member.id}}/edit">Edit</a></div>
     </article>
     {% endfor %}
 </table>
