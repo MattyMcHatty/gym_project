@@ -17,7 +17,9 @@
         </label>
             <select name="member_id" id="member">
                 {% for member in all_members %}
+                    {% if member.active %}
                     <option value="{{member.id}}">{{member.last_name}}, {{member.first_name}}</option>
+                    {% endif %}
                 {% endfor %}
             </select>
             <input type="hidden" name="course_id" value="{{course.id}}">
@@ -27,7 +29,7 @@
     <h3>Signups</h3>
     <ul>
     {% for member in members %}
-        <li>{{member.last_name}}, {{member.first_name}}</li>
+            <li>{{member.last_name}}, {{member.first_name}} </li>
     {% endfor %}
     </ul>
 

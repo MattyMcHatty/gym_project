@@ -49,14 +49,18 @@ Monday
         setup a link to delete a booking - Done
         setup link to show an individual member and all the courses they are signed up to - Done
         setup a link to show an individual course and all the members that are signed up - Done
-        create delete button on each member edit page to delete any courses - 
-        create delete button on each course show page to remove any members -
         create form to add a member from the course show page - Done
         create form to add a course from the member edit page - Done
+        create an if loop that calculates how many people are signed up to a course and then stops
+            the user from adding a member if it is full - 
+        deactivated members don't show in the join class list - Done
+
         CSS
 
 Tuesday
     Complete all additional functionality;
+        create delete button on each member edit page to delete any courses - 
+        create delete button on each course show page to remove any members -
 
 Wednesday
     Clean up code and prepare for presentation;

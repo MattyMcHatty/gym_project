@@ -1,5 +1,3 @@
 an if loop that stipulates that if a member is already registered for a course then they cannot join it.
 
-show each member and which courses they are signed up for
-
-show each course and the members that are signed up
+in edit member form, default premium and active to what it was before you entered.
