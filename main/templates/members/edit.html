@@ -39,17 +39,25 @@
     </form>
 
     <br>
+    <form action="/bookings" method="POST">
+        <label for="courses">
+            <span>Signup to Course:</span>
+        </label>
+            <select name="course_id" id="course">
+                {% for course in all_courses %}
+                    <option value="{{course.id}}">{{course.name}}, {{course.date}}</option>
+                {% endfor %}
+            </select>
+            <input type="hidden" name="member_id" value="{{member.id}}">
+        <input type="submit" value="Confirm">
+
+
         <h3>Enrolled Courses</h3>
-    <br>
-        
     <ul>
         {% for course in courses %}
-    
         <li>
-            <p>{{course.name}}, {{course.date}}
-            </p>
+            {{course.name}}, {{course.date}}
         </li>
-    
         {% endfor %}
     </ul>
 

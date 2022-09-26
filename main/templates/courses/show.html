@@ -9,6 +9,21 @@
     {{course.date}}<br>
     Spots left: "capacity - bookings" / {{course.capacity}}<br>
     <br>
+
+
+    <form action="/bookings" method="POST">
+        <label for="members">
+            <span>Signup Member:</span>
+        </label>
+            <select name="member_id" id="member">
+                {% for member in all_members %}
+                    <option value="{{member.id}}">{{member.last_name}}, {{member.first_name}}</option>
+                {% endfor %}
+            </select>
+            <input type="hidden" name="course_id" value="{{course.id}}">
+        <input type="submit" value="Confirm">
+
+
     <h3>Signups</h3>
     <ul>
     {% for member in members %}

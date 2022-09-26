@@ -49,6 +49,10 @@ Monday
         setup a link to delete a booking - Done
         setup link to show an individual member and all the courses they are signed up to - Done
         setup a link to show an individual course and all the members that are signed up - Done
+        create delete button on each member edit page to delete any courses - 
+        create delete button on each course show page to remove any members -
+        create form to add a member from the course show page - Done
+        create form to add a course from the member edit page - Done
         CSS
 
 Tuesday
