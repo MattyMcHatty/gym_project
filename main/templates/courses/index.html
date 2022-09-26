@@ -5,19 +5,24 @@
 <h1> Courses</h1>
 
 <p>
-    <a href="/courses/new">+ New Course</a>
+    <form class="new-button" action="/courses/new">
+        <input type="submit" value="+ New Course">
+    </form>
 </p>
 
+<main class="course-panels">
     {% for course in courses %}
 
     <br>
-    <h3>{{course.name}}</h3><a href="/courses/{{course.id}}/edit">  |  Edit</a><br>
+    <div>
+    <h2>{{course.name}}</h2><a href="/courses/{{course.id}}/edit">  |  Edit</a><br>
     {{course.description}}<br>
     {{course.date}}<br>
     Spots left: ???? / {{course.capacity}}<br>
     <br>
     <a href="/courses/{{course.id}}">Show Signups</a><br>
-
+        </div>
     {% endfor %}
+</main>
 
 {% endblock %}

@@ -1,0 +1,271 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #e3f2fe;
+    
+    }
+
+header{
+    height: 4rem;
+    background-color:  #4690c5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    }
+
+nav{
+    background-color: #83baea;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    }
+
+nav ul {
+    display: flex;
+    }
+
+nav li {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 1.3rem;
+    list-style: none;
+    }
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    }
+
+nav li a:hover {
+    text-decoration: underline;
+    }
+
+h1 {
+    height: 3rem;
+    background-color:  #95c2ea;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    }
+
+.new-button{
+    background-color: #aaaaaa;
+    color: #fff;
+    padding: 0;
+    font-size: 16px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    display:inline-block;
+    text-align: left;
+    }
+
+.container {
+    display: grid;
+    justify-content: center;       
+    }
+
+.member-row {
+        grid-template-columns: 33% 25% 25% 17%;
+    }
+
+.member-box{
+    border: 1px groove black;
+}
+
+.single-member {
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+
+.edit-button a{
+    color: rgb(44, 57, 141);
+    border-radius: 0px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+
+.edit-button a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.member-form{
+    display: grid;
+    justify-content: center;
+}
+
+.edit-member-row{
+    grid-template-columns: 80% 20%;
+}
+
+.delete-button{
+    justify-content: center;
+    background-color: #a81717;
+    color: #fff;
+    padding: 0;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    display:inline-block;
+    text-align: center;
+}
+
+.delete-button:hover{
+    background-color: #2a6318;
+    text-decoration: underline;
+    
+}
+
+.signup-selector{
+    justify-content: left;
+    padding: 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 10% 25% 25%;
+}
+
+h3{
+    height: 3rem;
+    background-color:  #95c2ea;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+div ul{
+    font-size: 1.5rem;
+}
+
+.course-form{
+    display: grid;
+    justify-content: center;
+}
+
+.course-panels{
+    display: flex;
+
+
+
+
+.where-togo {
+    background: #040E27;
+    padding: 20px 10px;
+    }
+
+.where-togo h3 {
+    font-size: 2rem;
+    color: #fff;
+    }
+
+.search-form {
+    display: flex;
+    }
+  
+  .input-field {
+    width: 220px;
+    margin: 10px;
+  }
+  
+  input {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    padding-left: 15px;
+    border-radius: 5px;
+  }
+  
+  .nice-select {
+    width: 100%;
+    height: 54px;
+    font-size: 1rem;
+    color: #AAB1B7;
+    font-weight: 300;
+    border: 1px solid #363E52;
+    border-radius: 5px;
+  }
+  
+
+  
+  .section-title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .single-destination {
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+
+  
+  .testimonial-area {
+    background: #363E52;
+    padding: 50px;
+  }
+  
+  .single-testmonial{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 20px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer {
+    color: #FFF;
+    background: #040E27;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .footer-widget p {
+    color: #AAB1B7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #AAB1B7;
+  }
+  
+  .footer-widget a:hover {
+    color: #FF4A52;
+  }
+  
+  .footer-widget ul li {
+    font-size: 14px;
+    line-height: 36px;
+  }
+  
+  .footer-widget a {
+    color: #AAB1B7;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 720px) {
+    .row {
+      grid-auto-flow: row;
+      grid-template-columns: 50%;
+    }
+  }

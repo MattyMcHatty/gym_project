@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
     <h1>Edit {{member.first_name}}</h1>
-    <form action="/members/{{member.id}}" method="POST">
+    <section class="container edit-member-row">
+    <div class="single-member"><form class = "member-form" action="/members/{{member.id}}" method="POST">
         <label for="first_name">
             <span>First Name:</span>
         </label>
-            <input id="first_name" name="first_name" type="text" value="{{member.first_name}}" required>
+            <input id="first_name" name="first_name" type="text" value="{{member.first_name}}" required><br>
 
         <label for="last_name">
             <span>Last Name:</span>
         </label>
-            <input id="last_name" name="last_name" type="text" value="{{member.last_name}}" required>
+            <input id="last_name" name="last_name" type="text" value="{{member.last_name}}" required><br>
 
         <label for="premium">
             <span>Premium?:</span>
@@ -20,7 +20,7 @@
         <select id="premium" name="premium">
             <option value="True">Yes</option>
             <option value="False">No</option>
-        </select>
+        </select><br>
 
         <label for="active">
             <span>Active?:</span>
@@ -28,21 +28,24 @@
         <select id="active" name="active">
             <option value="True">Yes</option>
             <option value="False">No</option>
-        </select>
+        </select><br>
 
         <input type="submit" value="Update Member">
 
     </form>
-    <br>
-    <form action="/members/{{member.id}}/delete" method="POST">
-        <input type="submit" value="Delete">
+    </div>
+    <div>
+    <form class="delete-button" action="/members/{{member.id}}/delete" method="POST">
+        <input class="delete-button" type="submit" value="Delete">
     </form>
+    </div>
+</section>
 
     <br>
     {% if member.active %}
-    <form action="/bookings" method="POST">
+    <form class = "signup-selector" action="/bookings" method="POST">
         <label for="courses">
-            <span>Signup to Course:</span>
+            Signup to Course:
         </label>
             <select name="course_id" id="course">
                 {% for course in all_courses %}
@@ -51,12 +54,14 @@
             </select>
             <input type="hidden" name="member_id" value="{{member.id}}">
         <input type="submit" value="Confirm">
+    </form>
     {% else %}
             Members cannot be signed up to courses while inactive.
     {% endif %}
 
 
         <h3>Enrolled Courses</h3>
+    <div>
     <ul>
         {% for course in courses %}
         <li>
@@ -64,5 +69,6 @@
         </li>
         {% endfor %}
     </ul>
+    </div>
 
 {% endblock %}
