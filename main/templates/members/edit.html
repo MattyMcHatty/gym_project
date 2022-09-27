@@ -69,7 +69,7 @@
                     Signup to Course:
                 </label>
             <select name="course_id" id="course">
-                {% for course in all_courses %}
+                {% for course in all_courses %}                  
                     <option value="{{course.id}}">{{course.name}}, {{course.date}}</option>
                 {% endfor %}
             </select>
@@ -80,7 +80,7 @@
             Members cannot be signed up to courses while inactive.
         {% endif %}
     <div>
-        
+
     <ul>
         {% for course in courses %}
         <li>
