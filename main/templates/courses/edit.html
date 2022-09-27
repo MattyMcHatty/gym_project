@@ -2,6 +2,8 @@
 
 {% block content %}
 
+<title>GloboGym - Edit {{course.name}}</title>
+
     <h1>Edit {{course.name}} Course</h1>
     <form class="course-form" action="/courses/{{course.id}}" method="POST">
         <label for="name">

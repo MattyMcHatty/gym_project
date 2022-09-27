@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+<title>GloboGym - Edit {{member.first_name}}</title>
+
     <h1>Edit {{member.first_name}}</h1>
     <section class="container edit-member-row">
     <div class="single-member"><form class = "member-form" action="/members/{{member.id}}" method="POST">
