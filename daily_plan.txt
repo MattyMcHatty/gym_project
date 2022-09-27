@@ -60,9 +60,9 @@ Tuesday
     Complete all additional functionality;
         create delete button on each member edit page to delete any courses - 
         create delete button on each course show page to remove any members -
-        when I pick to edit course, why doesn't it default the text with the course.description value? -
-        create 'head' for each page 
-    Finish CSS
+        when I pick to edit course, why doesn't it default the text with the course.description value? - 
+        create 'head' for each page - Done
+        Finish CSS
 
 Wednesday
     Clean up code and prepare for presentation;

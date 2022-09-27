@@ -1,2 +1,2 @@
 
-Create the head for each page
+add a quick booking button on the front page

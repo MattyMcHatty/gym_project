@@ -4,7 +4,7 @@
 
 <title>GloboGym - Edit {{course.name}}</title>
 
-    <h1>Edit {{course.name}} Course</h1>
+<h1>Edit {{course.name}} Course</h1>
     <form class="course-form" action="/courses/{{course.id}}" method="POST">
         <label for="name">
             <span>Course Name:</span>
@@ -33,8 +33,8 @@
         <input type="submit" value="Edit Course">
 
     </form>
-
     <br>
+    
     <form action="/courses/{{course.id}}/delete" method="POST">
         <input class="delete-button" type="submit" value="Delete">
     </form>

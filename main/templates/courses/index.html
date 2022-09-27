@@ -17,14 +17,15 @@
 
     <br>
     <div>
-    <h2>{{course.name}}   |  <a href="/courses/{{course.id}}/edit">  Edit</a></h2>
-    {{course.description}}<br>
-    {{course.date}}<br>
-    Spots: {{course.capacity}}<br>
-    <br>
-    <a href="/courses/{{course.id}}">Show Signups</a><br>
+        <h2>{{course.name}}   |  <a href="/courses/{{course.id}}/edit">  Edit</a></h2>
+        {{course.description}}<br>
+        {{course.date}}<br>
+        Spots: {{course.capacity}}<br>
+        <br>
+            <a href="/courses/{{course.id}}">Show Signups</a><br>
         </div>
     {% endfor %}
+    
 </main>
 
 {% endblock %}

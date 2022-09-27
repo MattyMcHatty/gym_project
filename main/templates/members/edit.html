@@ -4,76 +4,83 @@
 
 <title>GloboGym - Edit {{member.first_name}}</title>
 
-    <h1>Edit {{member.first_name}}</h1>
+<h1>Edit {{member.first_name}}</h1>
+
     <section class="container edit-member-row">
-    <div class="single-member"><form class = "member-form" action="/members/{{member.id}}" method="POST">
-        <label for="first_name">
-            <span>First Name:</span>
-        </label>
-            <input id="first_name" name="first_name" type="text" value="{{member.first_name}}" required><br>
+        <div class="single-member">
+            <form class = "member-form" action="/members/{{member.id}}" method="POST">
+            <label for="first_name">
+                <span>First Name:</span>
+            </label>
+                <input id="first_name" name="first_name" type="text" value="{{member.first_name}}" required><br>
 
-        <label for="last_name">
-            <span>Last Name:</span>
-        </label>
-            <input id="last_name" name="last_name" type="text" value="{{member.last_name}}" required><br>
+            <label for="last_name">
+                <span>Last Name:</span>
+            </label>
+                <input id="last_name" name="last_name" type="text" value="{{member.last_name}}" required><br>
 
-        <label for="premium">
-            <span>Premium?:</span>
-        </label>
-        <select id="premium" name="premium">
-            {% if member.premium != True %}
-                <option value="True">Yes</option>
-                <option value="False" selected>No</option>
-            {% else%}
-                <option value="True" selected>Yes</option>
-                <option value="False">No</option>
-            {% endif %}
-        </select><br>
+            <label for="premium">
+                <span>Premium?:</span>
+            </label>
+                <select id="premium" name="premium">
+                    {% if member.premium != True %}
+                        <option value="True">Yes</option>
+                        <option value="False" selected>No</option>
+                    {% else%}
+                        <option value="True" selected>Yes</option>
+                        <option value="False">No</option>
+                {% endif %}
+            </select>
+            <br>
 
-        <label for="active">
-            <span>Active?:</span>
-        </label>
-        <select id="active" name="active">
-            {% if member.active != True %}
-                <option value="True">Yes</option>
-                <option value="False" selected>No</option>
-            {% else %}
-                <option value="True" selected>Yes</option>
-                <option value="False">No</option>
-            {% endif %}
-        </select><br>
+            <label for="active">
+                <span>Active?:</span>
+            </label>
+                <select id="active" name="active">
+                    {% if member.active != True %}
+                        <option value="True">Yes</option>
+                        <option value="False" selected>No</option>
+                    {% else %}
+                        <option value="True" selected>Yes</option>
+                        <option value="False">No</option>
+                    {% endif %}
+                </select>
+                <br>
 
-        <input type="submit" value="Update Member">
+                <input type="submit" value="Update Member">
 
-    </form>
-    </div>
-    <div>
-    <form class="delete-button" action="/members/{{member.id}}/delete" method="POST">
-        <input class="delete-button" type="submit" value="Delete">
-    </form>
-    </div>
-</section>
+            </form>
+        </div>
+
+        <div>
+        <form class="delete-button" action="/members/{{member.id}}/delete" method="POST">
+            <input class="delete-button" type="submit" value="Delete">
+        </form>
+        </div>
+    </section>
 
     <br>
     
     <h3>Enrolled Courses</h3>
+
         {% if member.active %}
-    <form class = "signup-selector" action="/bookings" method="POST">
-        <label for="courses">
-            Signup to Course:
-        </label>
+            <form class = "signup-selector" action="/bookings" method="POST">
+                <label for="courses">
+                    Signup to Course:
+                </label>
             <select name="course_id" id="course">
                 {% for course in all_courses %}
                     <option value="{{course.id}}">{{course.name}}, {{course.date}}</option>
                 {% endfor %}
             </select>
-            <input type="hidden" name="member_id" value="{{member.id}}">
-        <input type="submit" value="Confirm">
-    </form>
-    {% else %}
+                <input type="hidden" name="member_id" value="{{member.id}}">
+                <input type="submit" value="Confirm">
+            </form>
+        {% else %}
             Members cannot be signed up to courses while inactive.
-    {% endif %}
+        {% endif %}
     <div>
+        
     <ul>
         {% for course in courses %}
         <li>

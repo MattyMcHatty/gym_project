@@ -4,17 +4,20 @@
 
 <title>GloboGym - Add New Member</title>
 
-    <h1>Add New Member</h1>
+<h1>Add New Member</h1>
     <form class="member-form" action="/members" method="POST">
+
         <label for="first_name">
             <span>First Name:</span>
         </label>
-            <input id="first_name" name="first_name" type="text" required><br>
+            <input id="first_name" name="first_name" type="text" required>
+            <br>
 
         <label for="last_name">
             <span>Last Name:</span>
         </label>
-            <input id="last_name" name="last_name" type="text" required><br>
+            <input id="last_name" name="last_name" type="text" required>
+            <br>
 
         <label for="premium">
             <span>Premium?:</span>
@@ -22,7 +25,8 @@
         <select id="premium" name="premium">
             <option value="True">Yes</option>
             <option value="False">No</option>
-        </select><br>
+        </select>
+        <br>
 
         <input type="submit" value="Add Member">
 

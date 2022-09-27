@@ -6,37 +6,41 @@
 
 <h1>{{course.name}}</h1>
 <main class="course-form">
-<a href="/courses/{{course.id}}/edit">Edit</a><br>
+<a href="/courses/{{course.id}}/edit">Edit</a>
+    <br>
     <br>
     {{course.description}}<br>
     {{course.date}}<br>
     Spots left: {{course.capacity - number_of_members}} / {{course.capacity}}<br>
     <br>
+
     {% if number_of_members != course.capacity %}
-    <form action="/bookings" method="POST">
-        <label for="members">
-            <span>Signup Member:</span>
-        </label>
-            <select name="member_id" id="member">
+        <form action="/bookings" method="POST">
+            <label for="members">
+                <span>Signup Member:</span>
+            </label>
+                <select name="member_id" id="member">
                 {% for member in all_members %}
                     {% if member.active %}
-                    <option value="{{member.id}}">{{member.last_name}}, {{member.first_name}}</option>
+                        <option value="{{member.id}}">{{member.last_name}}, {{member.first_name}}</option>
                     {% endif %}
                 {% endfor %}
             </select>
-            <input type="hidden" name="course_id" value="{{course.id}}">
-        <input type="submit" value="Confirm">
+                <input type="hidden" name="course_id" value="{{course.id}}">
+                <input type="submit" value="Confirm">
         </form>
+
     {% else %}
             This course is full
     {% endif %}
+
         </main>
 
 
-    <h3>Signups</h3>
+<h3>Signups</h3>
     <ul>
     {% for member in members %}
-            <li>{{member.last_name}}, {{member.first_name}} </li>
+        <li>{{member.last_name}}, {{member.first_name}} </li>
     {% endfor %}
     </ul>
 
