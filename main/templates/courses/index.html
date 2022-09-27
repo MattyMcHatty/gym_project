@@ -12,20 +12,21 @@
     </form>
 </p>
 
-<main class="course-panels">
+<main class="course-area">
     {% for course in courses %}
 
     <br>
-    <div>
+    <div class="course-panels">
         <h2>{{course.name}}   |  <a href="/courses/{{course.id}}/edit">  Edit</a></h2>
-        {{course.description}}<br>
-        {{course.date}}<br>
-        Spots: {{course.capacity}}<br>
-        <br>
+        <br><br>
+        {{course.description}}<br><br>
+        {{course.date}}<br><br>
+        Spots: {{course.capacity}}<br><br>
+        <br><br>
             <a href="/courses/{{course.id}}">Show Signups</a><br>
         </div>
     {% endfor %}
-    
+
 </main>
 
 {% endblock %}

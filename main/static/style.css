@@ -171,11 +171,26 @@ h3{
 
 .course-panels{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+    border: 0.3rem solid rgb(95, 130, 202);
+    width:250px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.course-area{
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     margin: 1rem;
-}
 
+    
+    text-align: center;
+}
 
