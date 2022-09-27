@@ -7,7 +7,7 @@
 <h1>Add New Booking</h1>
     <form action="/bookings" method="POST">
         <label for="member">
-            <span>Select a Member</span>
+            <span>Select a Member: </span>
         </label>
             <select name="member_id" id="member">
                 {% for member in members %}
@@ -18,7 +18,7 @@
             </select>
         
         <label for="course">
-            <span>Select a course</span>
+            <span>Select a Course: </span>
         </label>
             <select name="course_id" id="course">
                 {% for course in courses %}

@@ -2,7 +2,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     background-color: #e3f2fe;
     
-    }
+}
 
 header{
     height: 4rem;
@@ -12,7 +12,7 @@ header{
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    }
+}
 
 .homepage-text{
     display: flex;
@@ -24,39 +24,39 @@ header{
 a {
     color: rgb(22, 33, 95);
     text-decoration: none;
-    }
+}
     
 a:hover {
     color: red;
     text-decoration: underline;
-    }
+}
 
 nav{
     background-color: #83baea;
     height: 3rem;
     display: flex;
     align-items: center;
-    }
+}
 
 nav ul {
     display: flex;
-    }
+}
 
 nav li {
     margin-right: 15px;
     color: #fff;
     font-size: 1.3rem;
     list-style: none;
-    }
+}
 
 nav li a {
     color: #fff;
     text-decoration: none;
-    }
+}
 
 nav li a:hover {
     text-decoration: underline;
-    }
+}
 
 h1 {
     height: 3rem;
@@ -67,7 +67,7 @@ h1 {
     justify-content: center;
     font-size: 2rem;
 
-    }
+}
 
 .new-button{
     padding: 0;
@@ -78,16 +78,16 @@ h1 {
     font-size: 1rem;
     padding-left: 15px;
     border-radius: 5px;
-    }
+}
 
 .container {
     display: grid;
     justify-content: center;       
-    }
+}
 
 .member-row {
-        grid-template-columns: 33% 25% 25% 17%;
-    }
+    grid-template-columns: 33% 25% 25% 17%;
+}
 
 .member-box{
     border: 1px groove black;
@@ -97,7 +97,7 @@ h1 {
     margin: 5px;
     border-radius: 5px;
     overflow: hidden;
-    }
+}
 
 .edit-button a{
     color: rgb(44, 57, 141);
@@ -189,8 +189,28 @@ h3{
     justify-content: center;
     align-content: center;
     margin: 1rem;
-
-    
     text-align: center;
 }
 
+.course-form{
+    display: grid;
+    justify-content: center;
+}
+
+.show-course{
+    display:flex;
+    justify-content: center;
+}
+
+.single-course{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+    border: 0.3rem solid rgb(95, 130, 202);
+    width:250px;
+    min-height: 300px;
+    text-align: center;
+}
