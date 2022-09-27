@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, redirect
 from flask import Blueprint
 from models.member import Member
+from models.booking import Booking
 import repositories.member_repository as member_repository
 import repositories.course_repository as course_repository
+import repositories.booking_repository as booking_repository
 
 members_blueprint = Blueprint("members", __name__)
 
