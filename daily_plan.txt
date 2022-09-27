@@ -68,3 +68,7 @@ Wednesday
     Clean up code and prepare for presentation;
     Submit Pseudocode to Canvas
     Submit Implementations Constraint Plan to Canvas
+    Submit Object Diagram to Canva
+
+Thursday
+    
