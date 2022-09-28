@@ -50,7 +50,7 @@ def members(course):
     results = run_sql(sql, values)
 
     for row in results:
-        member = Member(row['first_name'], row['last_name'], row['premium'], row['active'])
+        member = Member(row['first_name'], row['last_name'], row['premium'], row['active'], row['id'])
         members.append(member)
 
     number_of_members = len(members)
