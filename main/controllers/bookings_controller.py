@@ -22,11 +22,17 @@ def new_booking():
 def create_booking():
     member_id = request.form['member_id']
     course_id = request.form['course_id']
+    redirector = request.form['redirector']
     member = member_repository.select(member_id)
     course = course_repository.select(course_id)
     booking = Booking(member, course)
     booking_repository.save(booking)
-    return redirect("/bookings")
+    if redirector == 'member_edit':
+        return redirect("members/" + str(member.id) + "/edit")
+    elif redirector == 'course_edit':
+        return redirect("courses/" + str(course.id))
+    else:
+        return redirect("/bookings")
 
 @bookings_blueprint.route("/bookings/<id>/delete", methods=["POST"])
 def delete_booking(id):
