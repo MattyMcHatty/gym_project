@@ -35,6 +35,17 @@ def select(id):
         booking = Booking(member, course, result['id'])
     return booking
 
+def find(member_id, course_id):
+    booking = None
+    sql = "SELECT * FROM bookings WHERE member_id = %s AND course_id = %s"
+    values = [member_id, course_id]
+
+    results = run_sql(sql, values)
+    if results:
+        result = results[0]
+        booking = Booking(result['member_id'], result['course_id'], result['id'])
+    return booking
+
 def delete_all():
     sql = "DELETE FROM bookings"
     run_sql(sql)

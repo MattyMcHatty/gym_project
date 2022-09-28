@@ -85,7 +85,12 @@
     <ul>
         {% for course in courses %}
         <li>
-            {{course.name}}, {{course.date}}
+            {{course.name}}, {{course.date}}{{course.id}}
+
+            <form action="/bookings/{{member.id}}/{{course.id}}/delete" method="POST">
+                <input type="submit" value="Cancel">
+                </form>
+
         </li>
         {% endfor %}
     </ul>

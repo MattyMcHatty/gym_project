@@ -63,7 +63,7 @@ Tuesday
         Finish CSS
 
 Wednesday
-    Clean up code and prepare for presentation;
+    Clean up code
     Submit Pseudocode to Canvas
     Submit Implementations Constraint Plan to Canvas - Done
     Submit Object Diagram to Canvas - Done
@@ -71,4 +71,5 @@ Wednesday
     create delete button on each course show page to remove any members -
 
 Thursday
+    Make presentation
     

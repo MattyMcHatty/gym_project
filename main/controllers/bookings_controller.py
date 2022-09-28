@@ -38,3 +38,9 @@ def create_booking():
 def delete_booking(id):
     booking_repository.delete(id)
     return redirect("/bookings")
+
+@bookings_blueprint.route("/bookings/<member_id>/<course_id>/delete", methods=["POST"])
+def delete_booking_from_member(member_id, course_id):
+    booking = booking_repository.find(member_id, course_id)
+    booking_repository.delete(booking.id)
+    return redirect("/members/" + str(member_id) + "/edit")

@@ -1,7 +1,4 @@
 
-add a quick booking button on the front page
-
-
 Pseudocode:
 
 Save Member Method (member):
