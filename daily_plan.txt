@@ -58,17 +58,17 @@ Monday
 
 Tuesday
     Complete all additional functionality;
-        create delete button on each member edit page to delete any courses - 
-        create delete button on each course show page to remove any members -
-        when I pick to edit course, why doesn't it default the text with the course.description value? - 
+        when I pick to edit course, why doesn't it default the text with the course.description value? - Done
         create 'head' for each page - Done
         Finish CSS
 
 Wednesday
     Clean up code and prepare for presentation;
     Submit Pseudocode to Canvas
-    Submit Implementations Constraint Plan to Canvas
-    Submit Object Diagram to Canva
+    Submit Implementations Constraint Plan to Canvas - Done
+    Submit Object Diagram to Canvas - Done
+    create delete button on each member edit page to delete any courses - 
+    create delete button on each course show page to remove any members -
 
 Thursday
     
