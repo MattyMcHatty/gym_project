@@ -15,8 +15,9 @@
     <br><br>
     Spots left: {{course.capacity - number_of_members}} / {{course.capacity}}<br>
     <br><br>
-
-    {% if number_of_members != course.capacity %}
+    {% if number_of_members > course.capacity %}
+        <b>This course is overbooked!</b>
+    {% elif number_of_members != course.capacity %}
         <form action="/bookings" method="POST">
             <label for="members">
                 <span>Signup Member:</span>
@@ -29,11 +30,12 @@
                 {% endfor %}
             </select>
                 <input type="hidden" name="course_id" value="{{course.id}}">
+                <input type="hidden" name="redirector" value="course_show">
                 <input type="submit" value="Confirm">
         </form>
 
     {% else %}
-            This course is full
+            <b>This course is full</b>
     {% endif %}
 
     </article>

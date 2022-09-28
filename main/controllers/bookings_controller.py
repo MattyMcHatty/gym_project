@@ -29,7 +29,7 @@ def create_booking():
     booking_repository.save(booking)
     if redirector == 'member_edit':
         return redirect("members/" + str(member.id) + "/edit")
-    elif redirector == 'course_edit':
+    elif redirector == 'course_show':
         return redirect("courses/" + str(course.id))
     else:
         return redirect("/bookings")
