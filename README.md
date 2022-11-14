@@ -6,7 +6,7 @@ To run
 
     dropdb gym_database
     createdb gym_database
-    psql -d gym_database -f db/gym_databse
+    psql -d gym_database -f db/gym_database
     python3 console.py
 
     In terminal to run the app:
