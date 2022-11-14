@@ -35,7 +35,7 @@ My Brief
 
 Technologies used:
     Postgres
-    Pythron 3.0
+    Python 3.0
     CSS
     SQL
     HTML 5.0
